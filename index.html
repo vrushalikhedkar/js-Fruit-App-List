@@ -12,13 +12,13 @@
             display: flex;
             position: relative;
             justify-content: center;
-            margin-top: 80px;
+            margin-top: 20px;
             margin-left: -20px;
         }
 
         .cards-img {
-            width: 250px;
-            height: 230px;
+            width: 290px;
+            height: 280px;
             border-radius: 15px;
             box-shadow: 0 0 20px 2px #ff33ff;
             margin-left: 50px;
@@ -30,8 +30,8 @@
         }
 
         .card-container-2 {
-            margin-top: 310px;
-            margin-left: -900px;
+            margin-top: 370px;
+            margin-left: -1000px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -49,6 +49,28 @@
             align-items: center;
             text-align: center;
         }
+
+        @media screen and (max-width: 701px) and (max-width: 900px){
+            .card-container{
+                width: 400px;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }
+        @media screen and (min-width: 910px) and (max-width: 1200px) {
+
+            .card-container{
+                width: 600px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+            
+        }
     </style>
 </head>
 
@@ -56,21 +78,21 @@
     <div class="card-container">
         <div class="card-container-1">
             <div class="card-heading">
-                <a href="./Pages/Electronics.html"><img src="./img's/index-all-imgs/electronic.jpg" class="cards-img" />
+                <a href="./Pages/traditional_wear.html"><img src="./images/main/traditional.jpg" class="cards-img" />
                 </a>
-                <h1 class="heading">The Electronic Devices</h1>
+                <h1 class="heading">The Traditional Outfit</h1>
             </div>
 
 
             <div class="card-heading">
-                <a href="./Pages/Furniture.html"><img src="./img's/index-all-imgs/furniture.jpg" class="cards-img" />
+                <a href="./Pages/party_wear.html"><img src="./images/main/party-wear.jpg" class="cards-img" />
                 </a>
-                <h1 class="heading">The furniture</h1>
+                <h1 class="heading">The Party waer</h1>
             </div>
 
 
             <div class="card-heading">
-                <a href="./Pages/Kids.html"><img src="./img's/index-all-imgs/Kids-Wear.webp" class="cards-img" />
+                <a href="./Pages/Kids.html"><img src="./images/main/Kids-Wear.webp" class="cards-img" />
                 </a>
                 <h1 class="heading">The kids wear</h1>
             </div>
@@ -81,24 +103,25 @@
         <div class="card-container-2">
 
             <div class="card-heading">
-                <a href="./Pages/Mens.html"><img src="./img's/index-all-imgs/mens-image.jpg" class="cards-img" />
+                <a href="./Pages/Mens.html"><img src="./images/main/mens-image.jpg" class="cards-img" />
                 </a>
                 <h1 class="heading">The men's wear</h1>
             </div>
 
 
             <div class="card-heading">
-                <a href="./Pages/Vehicles.html"><img src="./img's/index-all-imgs/vehicle-image.jpg" class="cards-img" />
+                <a href="./Pages/Womens .html"><img src="./images/main/womens-images.jpg" class="cards-img" />
                 </a>
-                <h1 class="heading">The vehicle gallary</h1>
+                <h1 class="heading">The womens </h1>
             </div>
 
 
             <div class="card-heading">
-                <a href="./Pages/Womens .html"><img src="./img's/index-all-imgs/womens-images.jpg" class="cards-img" />
+                <a href="./Pages/formal_wear.html"><img src="./images/main/images.jpg" class="cards-img" />
                 </a>
-                <h1 class="heading">The womens </h1>
+                <h1 class="heading">The Formal Outfit</h1>
             </div>
+
 
         </div> 
     </div>
