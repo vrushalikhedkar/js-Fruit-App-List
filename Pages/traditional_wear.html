@@ -146,6 +146,73 @@
             text-align: center;
             margin-top: 50px;
         }
+        .Copyfloater {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+
+}
+
+.ImageURl {
+    height: 30px;
+    width: 65%;
+    background-color: aliceblue;
+    color: black;
+    float: left;
+    margin-left: 210px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #d8e3e2;
+    /* border: solid #091615 1px; */
+    border-radius: 15%;
+}
+
+
+.CopyBtn {
+    height: 40px;
+    width: 100px;
+    margin-right: 40px;
+    border: #091615 solid 1px;
+    font-size: 20px;
+    background-color: #37306B;
+    color: azure;
+    float: right;
+    border-radius: 15%;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+
+}
+
+.CopyBtn:hover {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #66347F;
+    color: azure;
+    float: right;
+    border-radius: 15px;
+    font-family: cursive;
+    border: #091615 solid 1px;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
+.Homediv {
+    height: 100px;
+    width: 100%;
+}
+
+.HomeBtn {
+    display: block;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.1);
+    margin-top: 65px;
+}
     </style>
 </head>
 
@@ -170,6 +237,22 @@
         </div>
     </div>
 
+    <div class="Copyfloater">
+        <!-- <div type="text" class="ImageURl" id="URL">Copy this URL</div> -->
+        <span type="text" class="ImageURl" id="URL">
+            Copy This URL
+        </span>
+        <button class="CopyBtn" onclick="copyToclipboard()">
+            Copy URL
+        </button>
+    </div>
+
+    <div class="Homediv">
+        <a href="../index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/8862/8862711.png" alt="Home" class="HomeBtn">
+        </a>
+    </div>
+
     <script>
         function Light() {
             const element = document.getElementById("dark-mode");
@@ -184,50 +267,73 @@
         function roll() {
             const min = 1;
             const max = 12;
+            const link = document.getElementById("URL");
 
             const number = Math.floor(Math.random() * (max - min + 1) + min)
             const rollImg = document.getElementById("image");
 
             if (number == 1) {
+                link.innerHTML="https://i.pinimg.com/736x/8f/cb/04/8fcb04ca13e6351afd701147ee459ee7.jpg";
                 rollImg.src = "https://i.pinimg.com/736x/8f/cb/04/8fcb04ca13e6351afd701147ee459ee7.jpg";
 
             }
+
             else if (number == 2) {
-                rollImg.src = "https://manyavar.scene7.com/is/image/manyavarstage/Sherwani%20Category%20Tiles_%20Both%20device_12-01-2023-11-56?$R%2DD%2DHP%2DCircle$";
+                link.innerHTML="https://www.indiansilkhouseagencies.com/product_img/large/11AO0632Y3-3.jpg";
+                rollImg.src = "https://www.indiansilkhouseagencies.com/product_img/large/11AO0632Y3-3.jpg";
             }
+
             else if (number == 3) {
+                link.innerHTML="https://i.pinimg.com/736x/94/db/9f/94db9f8236ebdab17c145ce56047c623.jpg";
                 rollImg.src = "https://i.pinimg.com/736x/94/db/9f/94db9f8236ebdab17c145ce56047c623.jpg";
             }
+
             else if (number == 4) {
+                link.innerHTML="https://images.meesho.com/images/products/146701905/okvmv_512.jpg";
                 rollImg.src = "https://images.meesho.com/images/products/146701905/okvmv_512.jpg";
             }
+
             else if (number == 5) {
+                link.innerHTML="https://stylesatlife.com/wp-content/uploads/2017/12/Side-open-kurta.jpg";
                 rollImg.src = "https://stylesatlife.com/wp-content/uploads/2017/12/Side-open-kurta.jpg";
             }
 
             else if (number == 6) {
+                link.innerHTML="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81nnCkV3n6L._UL1500_.jpg";
                 rollImg.src ="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81nnCkV3n6L._UL1500_.jpg";
             }
+
             else if (number == 7) {
+                link.innerHTML="https://i.pinimg.com/originals/b2/0e/f1/b20ef142c095a2e46dcd46978c9ca6b2.jpg";
                 rollImg.src = "https://i.pinimg.com/originals/b2/0e/f1/b20ef142c095a2e46dcd46978c9ca6b2.jpg";
             }
             else if (number == 8) {
+                link.innerHTML="https://www.shebazaar.com/media/catalog/product/cache/a21c1d38413de64f1250fbeb2309e062/s/b/sb47_rt4677_156646.jpg";
                 rollImg.src = "https://www.shebazaar.com/media/catalog/product/cache/a21c1d38413de64f1250fbeb2309e062/s/b/sb47_rt4677_156646.jpg";
             }
+
             else if (number == 9) {
+                link.innerHTML="https://i.etsystatic.com/22604918/r/il/4fa582/3681662511/il_570xN.3681662511_q8g2.jpg";
                 rollImg.src = "https://i.etsystatic.com/22604918/r/il/4fa582/3681662511/il_570xN.3681662511_q8g2.jpg";
             }
+
             else if (number == 10) {
+                link.innerHTML="https://img0.junaroad.com/uiproducts/18227900/zoom_0-1642690357.jpg";
                 rollImg.src = "https://img0.junaroad.com/uiproducts/18227900/zoom_0-1642690357.jpg";
             }
+
             else if (number == 11) {
-                rollImg.src = "https://content3.jdmagicbox.com/comp/nagpur/p0/0712px712.x712.000382398867.t9p0/catalogue/arya-mens-ethnic-wear-and-veda-women-s-world-dharampeth-nagpur-sherwani-retailers-xr3jgzgspm.jpg";
+                link.innerHTML="https://images.meesho.com/images/products/19210423/5fcab_512.webp";
+                rollImg.src = "https://images.meesho.com/images/products/19210423/5fcab_512.webp";
             }
+
             else if (number == 12) {
+                link.innerHTML="https://koranm.com/pub/media/catalog/product/n/m/nm-60830-white.jpg?auto=compress&cs=tinysrgb&h=50";
                 rollImg.src = "https://koranm.com/pub/media/catalog/product/n/m/nm-60830-white.jpg?auto=compress&cs=tinysrgb&h=50";
             }
         }
 
+        
     </script>
 </body>
 
