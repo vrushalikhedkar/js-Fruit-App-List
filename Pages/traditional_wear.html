@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traditional Wear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f1e2f1;
+        }
+
+        .container-body {
+            background-color: #091615;
+        }
+
+        .title-div {
+            height: 70px;
+            width: 100%;
+            background-color: #e4b7de;
+        }
+
+        .title-heading {
+            display: block;
+            text-align: center;
+            font-weight: bolder;
+            color: rgb(32, 47, 47);
+            padding: 15px;
+            font-family: cursive;
+        }
+
+        #category {
+            height: 60px;
+            width: 500px;
+            color: #fff;
+            background-color: #4e4376;
+            font-size: 30px;
+            border-radius: 15%;
+            border: 2px black solid;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -25px;
+            font-family: cursive;
+            box-shadow: 5px 5px 7px 2px #4e6c50;
+        }
+
+        .light-btn {
+            height: 35px;
+            width: 75px;
+            padding: 2px;
+            font-family: cursive;
+            background-color: #4e4376;
+            margin-top: 10px;
+            color: aliceblue;
+            margin-left: 85%;
+            font-size: 17px;
+            border-radius: 15%;
+        }
+
+        .light-btn:hover {
+            height: 35px;
+            width: 75px;
+            padding: 2px;
+            font-size: 17px;
+            margin-left: 85%;
+            background-color: #2a5298;
+            margin-top: 10px;
+            font-family: cursive;
+            transform: scale(1.1);
+            border-radius: 15%;
+            color: aliceblue;
+        }
+
+        .dark-btn {
+            height: 35px;
+            width: 75px;
+            border-radius: 15%;
+            color: aliceblue;
+            padding: 2px;
+            margin-top: 10px;
+            font-family: cursive;
+            background-color: #4e4376;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .dark-btn:hover {
+            height: 35px;
+            width: 75px;
+            color: aliceblue;
+            font-size: 17px;
+            font-family: cursive;
+            padding: 2px;
+            margin-top: 10px;
+            background-color: #2a5298;
+            border-radius: 15%;
+            margin-left: 30px;
+            transform: scale(1.1);
+        }
+
+        .image {
+            height: 400px;
+            width: 300px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            display: block;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -25px;
+            border: solid 15px rgb(5, 4, 5);
+        }
+
+
+        .random-btn {
+            background-color: #4e4376;
+            border: 2px solid black;
+            border-radius: 15%;
+            color: #fff;
+            font-family: cursive;
+            cursor: pointer;
+            font-size: 20px;
+            height: 40px;
+            margin: 20px auto 10px;
+            padding: 0 10px;
+            width: 200px;
+        }
+
+        .random-btn:hover {
+            background-color: #2a5298;
+            transform: scale(1.2);
+            color: aliceblue;
+        }
+
+        .btn-content {
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="dark-mode">
+        <div class="title-div">
+            <h1 class="title-heading">The Traditional Wear</h1>
+        </div>
+        <button class="light-btn" onclick="Light()">Light</button>
+        <button class="dark-btn" onclick="Dark()">Dark</button>
+        <div class="select-category">
+           
+
+            </select>
+            <div class="btn-content">
+                <img src="https://www.kalaniketan.com/media/catalog/product/cache/a21c1d38413de64f1250fbeb2309e062/R/a/RangbaazV11_1106_2.jpg" alt="image" class="image"
+                    id="image" />
+                <button class="random-btn" onclick="roll()">
+                    Generate Image
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function Light() {
+            const element = document.getElementById("dark-mode");
+            element.className = "body";
+        }
+
+        function Dark() {
+            const element = document.getElementById("dark-mode");
+            element.className = "container-body";
+        }
+
+        function roll() {
+            const min = 1;
+            const max = 12;
+
+            const number = Math.floor(Math.random() * (max - min + 1) + min)
+            const rollImg = document.getElementById("image");
+
+            if (number == 1) {
+                rollImg.src = "https://i.pinimg.com/736x/8f/cb/04/8fcb04ca13e6351afd701147ee459ee7.jpg";
+
+            }
+            else if (number == 2) {
+                rollImg.src = "https://manyavar.scene7.com/is/image/manyavarstage/Sherwani%20Category%20Tiles_%20Both%20device_12-01-2023-11-56?$R%2DD%2DHP%2DCircle$";
+            }
+            else if (number == 3) {
+                rollImg.src = "https://i.pinimg.com/736x/94/db/9f/94db9f8236ebdab17c145ce56047c623.jpg";
+            }
+            else if (number == 4) {
+                rollImg.src = "https://images.meesho.com/images/products/146701905/okvmv_512.jpg";
+            }
+            else if (number == 5) {
+                rollImg.src = "https://stylesatlife.com/wp-content/uploads/2017/12/Side-open-kurta.jpg";
+            }
+
+            else if (number == 6) {
+                rollImg.src ="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81nnCkV3n6L._UL1500_.jpg";
+            }
+            else if (number == 7) {
+                rollImg.src = "https://i.pinimg.com/originals/b2/0e/f1/b20ef142c095a2e46dcd46978c9ca6b2.jpg";
+            }
+            else if (number == 8) {
+                rollImg.src = "https://www.shebazaar.com/media/catalog/product/cache/a21c1d38413de64f1250fbeb2309e062/s/b/sb47_rt4677_156646.jpg";
+            }
+            else if (number == 9) {
+                rollImg.src = "https://i.etsystatic.com/22604918/r/il/4fa582/3681662511/il_570xN.3681662511_q8g2.jpg";
+            }
+            else if (number == 10) {
+                rollImg.src = "https://img0.junaroad.com/uiproducts/18227900/zoom_0-1642690357.jpg";
+            }
+            else if (number == 11) {
+                rollImg.src = "https://content3.jdmagicbox.com/comp/nagpur/p0/0712px712.x712.000382398867.t9p0/catalogue/arya-mens-ethnic-wear-and-veda-women-s-world-dharampeth-nagpur-sherwani-retailers-xr3jgzgspm.jpg";
+            }
+            else if (number == 12) {
+                rollImg.src = "https://koranm.com/pub/media/catalog/product/n/m/nm-60830-white.jpg?auto=compress&cs=tinysrgb&h=50";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
